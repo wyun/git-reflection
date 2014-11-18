@@ -1,0 +1,8 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+- The git directory is tracked as a repository. i can add files, remove files and change files. the history of those changes can be tracked in history.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+- staging area can commit partial changes to a repository and commit those changes.  It makes logical commit possible even when more than tracked files are changed. 
+
