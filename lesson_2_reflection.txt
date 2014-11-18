@@ -6,3 +6,48 @@ How is the staging area different from the working directory and the repository?
 
 - staging area can commit partial changes to a repository and commit those changes.  It makes logical commit possible even when more than tracked files are changed. 
 
+Comparing working directory, staging area, and repository
+
+- staging area does not have commit id, so use 'git diff' without any argument to compare working directory with staging area. 
+- to compare staging area with repository's last commit, use 'git diff --staged'
+- to abort changes, we can use 'git reset --hard'. 
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+- compare staging area with the latest commit. 'git diff --staged'
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+- branch out for different features. branches can be made to experiment big features without messing up with master. 
+
+Commands to branch
+
+- git branch  # to list branches
+- git branch [new branch name] # create new branch
+- git checkout [branch name] to switch to another branch 
+
+While working on a detached HEAD state, experiment changes, how to retrain those changes?
+
+- git checkout -b new_branch_name.  this command is equal to: "git branch new_branch_name" + "git checkout new_branch_name"
+
+How do the diagrams help you visualize the branch structure?
+
+- it helps.
+
+When merge conflicts happen, what to do?
+
+- do 'git merge --abort', then figure out file conflicts, then try to merge again.
+
+How to compare a commit to its parent?
+
+- git show commit_id
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+- all nodes on those two branches are reachable by the latest commit node. 
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+- automatic one will save time. manual one is more precise.
