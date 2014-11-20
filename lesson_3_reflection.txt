@@ -4,3 +4,8 @@ git remote add origin [URL]
 
 git push origin master
 git push origin [branch_name]
+
+When would you want to use a remote repository rather than keeping all your work local?
+-when a logical step is ready to share with others. 
+-when a backup is needed for a project. 
+-when another collaborator is ready to pick up where i left off. 
